@@ -1,31 +1,36 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlcpy.c                                       :+:      :+:    :+:   */
+/*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: Psigfry <darn.vr@gmail.com>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/07/13 17:58:47 by Psigfry           #+#    #+#             */
-/*   Updated: 2021/07/13 18:18:08 by Psigfry          ###   ########.fr       */
+/*   Created: 2021/08/07 16:19:48 by Psigfry           #+#    #+#             */
+/*   Updated: 2021/08/07 16:51:04 by Psigfry          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-unsigned int	ft_strlcpy(char *dest, char *src, unsigned int size)
+char	*ft_strdup(const char *src)
 {
-	unsigned int	count;
-	unsigned int	i;
+	char	*new;
+	int		i;
+	int		size;
 
-	count = 0;
-	while (src[count] != '\0')
-		++count;
+	size = 0;
+	while (src[size])
+		++size;
+	new = malloc(sizeof(char) * (size + 1));
+	if (!new)
+		return (NULL);
 	i = 0;
-	while (src[i] != '\0' && i < (size - 1))
+	while (src[i])
 	{
-		dest[i] = src[i];
-		++i;
+		new[i] = src[i];
+		i++;
 	}
-	dest[i] = '\0';
-	return (count);
+	new[i] = '\0';
+	return (new);
+	free(new);
 }
