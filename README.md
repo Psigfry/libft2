@@ -11,6 +11,7 @@ Run make to compile the library.</br>
 Это скомпилирует библиотеку libft, и вы получите файл libft.a, содержащий все перечисленные функции.
 # Libc functions descriptions
 </br>
+
 | Function | Description |
 | -------- | ----------- |
 | ft_memset | Fill a byte string with a byte value |
