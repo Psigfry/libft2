@@ -5,4 +5,4 @@ libft
 
 # Installation
 Clone the repository to a directory.
-https://github.com/Psigfry/libft2.git
+<h2 align="center"> https://github.com/Psigfry/libft2.git </h2>
