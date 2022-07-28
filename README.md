@@ -10,16 +10,34 @@ Run make to compile the library.</br>
 ```cd libft && make && make clean```</br>
 Это скомпилирует библиотеку libft, и вы получите файл libft.a, содержащий все перечисленные функции.
 # Libc functions descriptions
-<table>
-    <thead>
-        <tr>
-            <th>Libc functions descriptions</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>ft_memset</td>
-            <td>Fill a byte string with a byte value</td>
-        </tr>
-    </tbody>
-</table>
+</br>
+| Function | Description |
+| -------- | ----------- |
+| ft_memset | Fill a byte string with a byte value |
+| ft_bzero | Write zeroes to a byte string |
+| ft_memcpy | Copy memory area |
+| ft_memccpy | Copy string until character found |
+| ft_memmove | Copy byte string |
+| ft_memchr | Locate byte in byte string |
+| ft_memcmp | Compare byte string |
+| ft_strlen | Find length of string |
+| ft_strdup | Save a copy of a string |
+| ft_strcpy | Copy strings |
+| ft_strncpy | Copy strings |
+| ft_strcat | Concatenate strings |
+| ft_strncat | Concatenate strings |
+| ft_strlcat | Size-bounded string copying and concatenation |
+| ft_strchr | Locate character in string |
+| ft_strrchr | Locate character in string |
+| ft_strstr | Locate substring in a string |
+| ft_strnstr | Locate substring in a string |
+| ft_strcmp | Compare strings |
+| ft_strncmp | Compare strings |
+| ft_atoi | Converts ASCII string to integer |
+| ft_isalpha | Alphabetic character test |
+| ft_isdigit | Decimal-digital character test |
+| ft_isalnum | Alphanumeric character test |
+| ft_isascii | Test for ASCII character |
+| ft_isprint | Printing character test (space character inclusive) |
+| ft_toupper | Lower case to upper case letter conversion |
+| ft_tolower | Upper case to lower case letter conversion |
