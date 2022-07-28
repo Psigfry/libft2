@@ -5,7 +5,7 @@ libft
 
 # Installation
 Clone the repository to a directory.</br>
-```https://github.com/Psigfry/libft2.git```
+```https://github.com/Psigfry/libft2.git```</br>
 Run make to compile the library.</br>
 ```cd libft && make && make clean```</br>
 Это скомпилирует библиотеку libft, и вы получите файл libft.a, содержащий все перечисленные функции.
@@ -42,3 +42,25 @@ Run make to compile the library.</br>
 | ft_isprint | Printing character test (space character inclusive) |
 | ft_toupper | Lower case to upper case letter conversion |
 | ft_tolower | Upper case to lower case letter conversion |
+
+## Bonus functions descriptions
+
+| Function | Description |
+| -------- | ----------- |
+| ft_lstnew | Allocates and returns "fresh" link |
+| ft_lstdelone | Deallocates link's content and address |
+| ft_lstdel | Deallocates pointed link's and following link's contents and addresses |
+| ft_lstadd | Adds new element at the beginning of the list |
+| ft_lstiter | Iterates and applies function to every element of the list |
+| ft_lstmap | Iterates and applies function to every element of the list and stores the result of function to new list |
+
+## Extra functions descriptions
+
+| Function | Description |
+| -------- | ----------- |
+| ft_islower | Checks if a given character is in lowercase |
+| ft_isspace | Checks if a given character is a space character |
+| ft_isuppper | Checks if a given character is in upppercase |
+| ft_lstfold | Applies a particular function passed in its argument to all of the list elements |
+| ft_strconcat | Joins the array of strings with the given delimeter |
+| get_next_line | Reads one line from the given file descriptor |
